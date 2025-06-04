@@ -1,0 +1,42 @@
+[worldserver]
+
+#
+#   FLRZAnnouncerEnabled
+#       Enable/Disable Announcer
+#       Default:    Enabled = 1
+#
+
+FLRZ_Announcer = 1
+
+#
+#   FLRZEnabled
+#       Enable/Disable this Module
+#       Default:    Enabled = 1
+#                   Disable = 0
+#
+
+FLRZ_Enabled = 1
+
+#
+#    MaxWarnings
+#        Description: MaxWarnings before the player gets kicked from the server
+#        Default: 3
+#
+
+FLRZ_MaxWarnings = 3
+
+#
+#   FLRZTeleportEnabled
+#        Description: Enables the player to be teleported
+#        Default: 1 (Enabled)
+#
+
+FLRZ_TeleportEnabled = 1
+
+#
+#   FLRZKickPlayerEnabled
+#        Description: Allows to expel the player
+#        Default: 1 (Enabled)
+#
+
+FLRZ_KickPlayerEnabled = 1
