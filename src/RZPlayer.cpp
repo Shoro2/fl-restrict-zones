@@ -24,7 +24,7 @@ FLRZ flrz;
 void teleportPlayer(Player* player)
 {
 	//todo insert teleport location for azealia
-	player->TeleportTo(0, -8833.38f, 628.628f, 94.0066f, 1.06535f);
+	player->TeleportTo(741, -241.953995f, 2160.459961f, 78.504204f, 2.407250f); // Azealia Under entrance (was map-13 placeholder)
     ChatHandler(player->GetSession()).PSendSysMessage("You have gone to a forbidden place your actions have been logged.");
 }
 
@@ -34,9 +34,8 @@ void checkZoneKeepOut(Player* player)
         return;
 
     uint32 mapId = player->GetMapId();
-    uint32 zoneId = player->GetZoneId();
 
-    QueryResult result = WorldDatabase.Query("SELECT * FROM `restricted_zones_lock` WHERE `mapId`={} AND `zoneID`={}", mapId, zoneId);
+    QueryResult result = WorldDatabase.Query("SELECT * FROM `restricted_zones_lock` WHERE `mapId`={}", mapId);
 
     if (!result)
         return;
